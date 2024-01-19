@@ -6,7 +6,7 @@ key = "F11"
 mods = "None"
 
 [font]
-size = 9.0
+size = 6.0
 
 [font.bold]
 family = "JetBrains Mono"
