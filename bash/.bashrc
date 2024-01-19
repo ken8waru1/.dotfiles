@@ -153,8 +153,11 @@ alias vim='nvim'
 alias vpnc='expressvpn connect'
 alias vpndc='expressvpn disconnect'
 
-# for when I'm too lazy to swap keyboard layouts
+# for when I'm too lazy to swap languages with my ime
 export ORE="$HOME/エ/"
+
+export DOTFILES=$HOME/.dotfiles/
+
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
