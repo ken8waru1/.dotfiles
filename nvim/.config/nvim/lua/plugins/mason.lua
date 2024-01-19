@@ -5,6 +5,8 @@ return {
       vim.list_extend(opts.ensure_installed, {
         "typescript-language-server",
         "rust-analyzer",
+        "bash-language-server",
+        "yaml-language-server",
         "taplo",
       })
       opts.ui = {
