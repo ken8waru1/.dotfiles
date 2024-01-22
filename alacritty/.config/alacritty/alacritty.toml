@@ -6,7 +6,7 @@ key = "F11"
 mods = "None"
 
 [font]
-size = 6.0
+size = 10.0
 
 [font.bold]
 family = "JetBrains Mono"
@@ -23,3 +23,6 @@ style = "Italic"
 [font.normal]
 family = "JetBrains Mono"
 style = "Regular"
+
+[env]
+WINIT_X11_SCALE_FACTOR = "1"
