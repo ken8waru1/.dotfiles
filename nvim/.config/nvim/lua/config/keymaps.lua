@@ -45,3 +45,5 @@ vim.keymap.set("n", "<leader>sx", builtin.resume, { noremap = true, silent = tru
 vim.keymap.set("n", "<leader>ps", function()
     builtin.grep_string({ search = vim.fn.input("Grep > ") })
 end)
+
+vim.keymap.set("n", "<leader>gS", vim.cmd.Git, { desc = "Fugitive Git Status" })
