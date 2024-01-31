@@ -51,3 +51,7 @@ vim.keymap.set("n", "<leader>gt", function()
   require("telescope").extensions.git_worktree.git_worktrees()
 end, { desc = "Git Worktrees" })
 vim.keymap.set("n", "<leader>gS", vim.cmd.Git, { desc = "Fugitive Git Status" })
+
+vim.keymap.set("c", "<S-Enter>", function()
+  require("noice").redirect(vim.fn.getcmdline())
+end, { desc = "Redirect Cmdline" })
