@@ -232,7 +232,6 @@ client.unfocused        $darkgray $darkgray $lightgray $purple $darkgray
 client.urgent           $red $red $white $red $red
 
 exec --no-startup-id alacritty
-exec --no-startup-id firefox 
 
 for_window [title="Desktop @ QRect"] kill
 assign [class="Alacritty"] $ws1
