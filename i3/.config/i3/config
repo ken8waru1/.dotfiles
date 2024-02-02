@@ -136,8 +136,8 @@ bindsym $mod+8 workspace number $ws8
 bindsym $mod+9 workspace number $ws9
 bindsym $mod+0 workspace number $ws10
 
-bindsym $mod+Control+l workspace next
-bindsym $mod+Control+h workspace prev
+bindsym $mod+Control+l exec "~/.local/bin/custom/change-workspace next"
+bindsym $mod+Control+h exec "~/.local/bin/custom/change-workspace prev"
 
 # move focused container to workspace
 bindsym $mod+Shift+1 move container to workspace number $ws1
@@ -236,3 +236,4 @@ exec --no-startup-id alacritty
 for_window [title="Desktop @ QRect"] kill
 assign [class="Alacritty"] $ws1
 assign [class="firefox"] $ws2
+assign [class="dolphin"] $ws3
