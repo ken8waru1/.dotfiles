@@ -8,7 +8,8 @@ return {
                 "bash-language-server",
                 "yaml-language-server",
                 "taplo",
-                "shellcheck"
+                "shellcheck",
+                "gopls"
             })
             opts.ui = {
                 border = "single",
