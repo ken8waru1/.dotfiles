@@ -237,3 +237,5 @@ for_window [title="Desktop @ QRect"] kill
 assign [class="Alacritty"] $ws1
 assign [class="firefox"] $ws2
 assign [class="dolphin"] $ws3
+
+workspace_layout tabbed
