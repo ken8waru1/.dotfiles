@@ -168,4 +168,5 @@ source /usr/share/doc/fzf/examples/key-bindings.bash
 # keybind for creating a new tmux session
 bind '"\C-f":"tmux-sessionizer\n"'
 
-export PATH="$HOME/.local/bin/custom:$PATH"
+export PATH="$PATH:$HOME/.local/bin/custom:/usr/local/go/bin"
+
