@@ -47,9 +47,6 @@ vim.keymap.set("n", "<leader>sx", builtin.resume, { noremap = true, silent = tru
 vim.keymap.set("n", "<leader>ps", function()
   builtin.grep_string({ search = vim.fn.input("Grep > ") })
 end)
-vim.keymap.set("n", "<leader>gt", function()
-  require("telescope").extensions.git_worktree.git_worktrees()
-end, { desc = "Git Worktrees" })
 vim.keymap.set("n", "<leader>gS", vim.cmd.Git, { desc = "Fugitive Git Status" })
 
 vim.keymap.set("c", "<S-Enter>", function()

@@ -1,7 +1,13 @@
 return {
   "ThePrimeagen/git-worktree.nvim",
   lazy = false,
-  opts = function()
-    require("telescope").load_extension("git_worktree")
-  end,
+  keys = {
+    {
+      "<leader>gt",
+      function()
+        require("telescope").extensions.git_worktree.git_worktrees()
+      end,
+      desc = "Git Worktrees",
+    },
+  },
 }
