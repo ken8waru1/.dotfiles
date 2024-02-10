@@ -16,5 +16,14 @@ return {
         },
       },
     },
+    keys = {
+      {
+        "<S-Enter>",
+        function()
+          require("noice").redirect(vim.fn.getcmdline())
+        end,
+        desc = "Redirect Cmdline",
+      },
+    },
   },
 }
