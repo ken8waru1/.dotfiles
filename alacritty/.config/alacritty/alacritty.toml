@@ -16,7 +16,7 @@ key = "Return"
 mods = "Control"
 
 [font]
-size = 10.0
+size = 11.0
 
 [font.bold]
 family = "JetBrains Mono"
