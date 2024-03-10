@@ -25,18 +25,10 @@ return {
         NoiceCmdlinePopupBorder = { bg = "#282828" },
         NoiceCmdlinePopupTitle = { fg = "#83a598", bg = "NONE" },
         NoiceCmdlineIcon = { fg = "#83a598", bg = "#282828" },
+        FlashBackdrop = { link = "NONE" },
       },
     },
   },
-  {
-    "folke/tokyonight.nvim",
-    priority = 1000,
-    opts = {},
-  },
-  {
-    "Shatur/neovim-ayu",
-  },
-
   -- Configure LazyVim to load gruvbox
   {
     "LazyVim/LazyVim",
