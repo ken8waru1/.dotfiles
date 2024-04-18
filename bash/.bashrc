@@ -173,5 +173,5 @@ bind '"\C-f":"tmux-sessionizer\n"'
 # keybind for switching between existing tmux sessions
 bind '"\ef":"tmux-session-switch\n"'
 
-export PATH="$PATH:$HOME/.local/bin/custom:/usr/local/go/bin"
+export PATH="$PATH:$HOME/.local/bin/custom:/usr/local/go/bin:$HOME/.local/share/nvim/mason/bin"
 
