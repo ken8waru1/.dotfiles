@@ -5,8 +5,9 @@ return {
             lua = { "stylua" },
             fish = { "fish_indent" },
             sh = { "shfmt" },
-            javascript = { { "prettier" } },
-            typescript = { { "prettier" } },
+            javascript = { "prettier" },
+            typescript = { "prettier" },
+            json = { "prettier" },
         },
     },
 }
