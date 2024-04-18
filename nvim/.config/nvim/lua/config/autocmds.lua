@@ -3,20 +3,20 @@
 -- Add any additional autocmds here
 
 vim.api.nvim_create_autocmd("ModeChanged", {
-  pattern = "*",
-  callback = function()
-    if
-      ((vim.v.event.old_mode == "s" and vim.v.event.new_mode == "n") or vim.v.event.old_mode == "i")
-      and require("luasnip").session.current_nodes[vim.api.nvim_get_current_buf()]
-      and not require("luasnip").session.jump_active
-    then
-      require("luasnip").unlink_current()
-    end
-  end,
+    pattern = "*",
+    callback = function()
+        if
+            ((vim.v.event.old_mode == "s" and vim.v.event.new_mode == "n") or vim.v.event.old_mode == "i")
+            and require("luasnip").session.current_nodes[vim.api.nvim_get_current_buf()]
+            and not require("luasnip").session.jump_active
+        then
+            require("luasnip").unlink_current()
+        end
+    end,
 })
 
 vim.api.nvim_create_autocmd({ "FileType" }, {
-  callback = function()
-    vim.opt.formatoptions:remove({ "c", "r", "o" })
-  end,
+    callback = function()
+        vim.opt.formatoptions:remove({ "c", "r", "o" })
+    end,
 })
