@@ -1,6 +1,7 @@
 return {
     {
         "folke/noice.nvim",
+        tag = "v2.0.2",
         opts = {
             presets = {
                 lsp_doc_border = true,
