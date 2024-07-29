@@ -15,6 +15,7 @@ return {
             "tsx",
             "typescript",
             "go",
+            "nginx",
             "rust",
             "vim",
             "yaml",
