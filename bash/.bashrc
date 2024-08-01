@@ -146,13 +146,6 @@ source "$OSH"/oh-my-bash.sh
 export PROMPT_DIRTRIM=8
 unset CDPATH
 
-# alias nvim to vim
-alias vim='nvim'
-
-# ExpressVPN aliases
-alias vpnc='expressvpn connect'
-alias vpndc='expressvpn disconnect'
-
 # for when I'm too lazy to swap languages with my ime
 export ORE="$HOME/エ/"
 
