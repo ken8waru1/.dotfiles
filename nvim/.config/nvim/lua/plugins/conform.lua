@@ -8,6 +8,7 @@ return {
             javascript = { "prettier" },
             typescript = { "prettier" },
             json = { "prettier" },
+            html = { "prettier" },
         },
     },
 }
