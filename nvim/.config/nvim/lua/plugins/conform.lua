@@ -7,6 +7,7 @@ return {
             sh = { "shfmt" },
             javascript = { "prettier" },
             typescript = { "prettier" },
+            typescriptreact = { "prettier" },
             json = { "prettier" },
             html = { "prettier" },
         },
