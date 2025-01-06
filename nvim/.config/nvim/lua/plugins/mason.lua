@@ -10,7 +10,9 @@ return {
                 "taplo",
                 "shellcheck",
                 "gopls",
+                "prisma-language-server",
                 "prettier",
+                "rustywind",
             })
             opts.ui = {
                 border = "single",

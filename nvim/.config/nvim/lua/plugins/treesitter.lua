@@ -19,6 +19,7 @@ return {
             "rust",
             "vim",
             "yaml",
+            "prisma",
         },
     },
 }
