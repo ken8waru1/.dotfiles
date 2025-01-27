@@ -12,6 +12,7 @@ return {
                 "gopls",
                 "prisma-language-server",
                 "prettier",
+                "prettierd",
                 "rustywind",
             })
             opts.ui = {
