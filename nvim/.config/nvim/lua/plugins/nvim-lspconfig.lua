@@ -2,6 +2,22 @@ return {
     "neovim/nvim-lspconfig",
     -- opts = {
     --     setup = {
+    --         lua_ls = function(_, opts)
+    --             opts.on_init = function(client)
+    --                 client.config.settings.Lua = vim.tbl_deep_extend("force", client.config.settings.Lua, {
+    --                     workspace = {
+    --                         checkThirdParty = false,
+    --                         library = {
+    --                             vim.env.VIMRUNTIME,
+    --                         },
+    --                     },
+    --                 })
+    --             end
+    --         end,
+    --     },
+    -- },
+    -- opts = {
+    --     setup = {
     --         tsserver = function(_, opts)
     --             opts.on_attach = function(_client, buffer)
     --                 local function goto_source_definition()
