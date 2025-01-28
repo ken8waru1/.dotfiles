@@ -5,7 +5,7 @@ case $- in
 esac
 
 # Path to your oh-my-bash installation.
-export OSH="/home/$USER/.oh-my-bash"
+export OSH='/Users/kenha/.oh-my-bash'
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-bash is loaded.
@@ -159,7 +159,7 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion" # This loads nvm bash_completion
 
 # fzf key bindings
-source /usr/share/doc/fzf/examples/key-bindings.bash
+# source /usr/share/doc/fzf/examples/key-bindings.bash
 
 # keybind for creating a new tmux session
 bind '"\C-f":"tmux-sessionizer\n"'
@@ -168,4 +168,5 @@ bind '"\C-f":"tmux-sessionizer\n"'
 bind '"\ef":"tmux-session-switch\n"'
 
 export PATH="$PATH:$HOME/.local/bin/custom:/usr/local/go/bin:$HOME/.local/share/nvim/mason/bin"
-
+eval "$(/opt/homebrew/bin/brew shellenv)"
+eval "$(fzf --bash)"
