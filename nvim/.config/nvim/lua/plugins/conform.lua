@@ -7,10 +7,10 @@ return {
             sh = { "shfmt" },
             javascript = { "prettierd" },
             typescript = { "prettierd" },
-            typescriptreact = { "prettierd", "rustywind" },
-            javascriptreact = { "prettierd", "rustywind" },
+            typescriptreact = { "prettierd" },
+            javascriptreact = { "prettierd" },
             json = { "prettierd" },
-            html = { "prettierd", "rustywind" },
+            html = { "prettierd" },
         },
     },
 }

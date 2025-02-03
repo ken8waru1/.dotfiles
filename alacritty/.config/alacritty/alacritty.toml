@@ -15,6 +15,16 @@ chars = "\u001B[13;5u"
 key = "Return"
 mods = "Control"
 
+[[keyboard.bindings]]
+chars = "\u0002h"
+key = "H"
+mods = "Command"
+
+[[keyboard.bindings]]
+chars = "\u0002l"
+key = "L"
+mods = "Command"
+
 [font]
 size = 13.0
 
