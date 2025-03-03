@@ -11,6 +11,7 @@ return {
             javascriptreact = { "prettierd", "rustywind" },
             json = { "prettierd" },
             html = { "prettierd", "rustywind" },
+            css = { "prettierd" },
         },
     },
 }

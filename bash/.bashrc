@@ -169,3 +169,11 @@ bind '"\ef":"tmux-session-switch\n"'
 
 export PATH="$PATH:$HOME/.local/bin/custom:/usr/local/go/bin:$HOME/.local/share/nvim/mason/bin"
 
+
+# pnpm
+export PNPM_HOME="/home/pai/.local/share/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
