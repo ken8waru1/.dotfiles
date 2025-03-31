@@ -170,3 +170,10 @@ bind '"\ef":"tmux-session-switch\n"'
 export PATH="$PATH:$HOME/.local/bin/custom:/usr/local/go/bin:$HOME/go/bin:$HOME/.local/share/nvim/mason/bin"
 eval "$(/opt/homebrew/bin/brew shellenv)"
 eval "$(fzf --bash)"
+
+# Added by Amplify CLI binary installer
+export PATH="$HOME/.amplify/bin:$PATH"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
