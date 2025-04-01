@@ -14,6 +14,7 @@ return {
                 "prettier",
                 "prettierd",
                 "rustywind",
+                "python-lsp-server",
             })
             opts.ui = {
                 border = "single",
