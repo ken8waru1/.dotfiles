@@ -20,5 +20,5 @@ return {
             help = true,
         },
     },
-    enabled = false,
+    enabled = true,
 }
