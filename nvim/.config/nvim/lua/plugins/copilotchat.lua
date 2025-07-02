@@ -28,6 +28,12 @@ return {
             window = {
                 width = 0.4,
             },
+            mappings = {
+                reset = {
+                    normal = "",
+                    insert = "",
+                },
+            },
         }
     end,
     keys = {
