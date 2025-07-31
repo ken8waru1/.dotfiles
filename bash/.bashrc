@@ -159,7 +159,7 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion" # This loads nvm bash_completion
 
 # fzf key bindings
-source /usr/share/doc/fzf/examples/key-bindings.bash
+source /usr/share/fzf/key-bindings.bash
 
 # keybind for creating a new tmux session
 bind '"\C-f":"tmux-sessionizer\n"'
@@ -171,9 +171,10 @@ export PATH="$PATH:$HOME/.local/bin/custom:/usr/local/go/bin:$HOME/.local/share/
 
 
 # pnpm
-export PNPM_HOME="/home/pai/.local/share/pnpm"
+export PNPM_HOME="$HOME/.local/share/pnpm"
 case ":$PATH:" in
   *":$PNPM_HOME:"*) ;;
-  *) export PATH="$PNPM_HOME:$PATH" ;;
+  *) export PATH="$PATH:$PNPM_HOME" ;;
 esac
 # pnpm end
+. "$HOME/.cargo/env"
