@@ -1,0 +1,15 @@
+profile undocked {
+    output eDP-1 enable
+}
+
+profile docked {
+    output eDP-1 disable
+    output "Dell Inc. DELL U2715H H7YCC5AD155L" {
+        mode 2560x1440
+        position 0,0
+    }
+    output "Dell Inc. DELL U2715H H7YCC69708PL" {
+        position 2560,0
+    }
+}
+
