@@ -277,4 +277,6 @@ assign [app_id="firefox"] $ws2
 workspace_layout tabbed
 
 exec_always systemctl --user start sway-session.target
+exec_always systemctl --user restart kanshi.service
 exec --no-startup-id dunst
+exec wl-paste --primary --watch wl-copy --primary --clear
