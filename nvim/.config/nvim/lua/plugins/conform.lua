@@ -7,11 +7,22 @@ return {
             sh = { "shfmt" },
             javascript = { "prettierd" },
             typescript = { "prettierd" },
-            typescriptreact = { "prettierd", "rustywind" },
-            javascriptreact = { "prettierd", "rustywind" },
+            typescriptreact = { "prettierd" },
+            javascriptreact = { "prettierd" },
+            python = { "black" },
             json = { "prettierd" },
-            html = { "prettierd", "rustywind" },
+            html = { "prettierd" },
+            xml = { "xmlformatter" },
             css = { "prettierd" },
+        },
+        formatters = {
+            xmlformatter = {
+                command = "xmlformat",
+                prepend_args = { "--selfclose", "--blanks" },
+            },
+            black = {
+                prepend_args = { "--line-length", "79" },
+            },
         },
     },
 }
