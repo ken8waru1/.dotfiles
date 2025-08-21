@@ -13,6 +13,7 @@ return {
                 "gopls",
                 "prisma-language-server",
                 "prettier",
+                "black",
                 "prettierd",
                 "rustywind",
                 "python-lsp-server",

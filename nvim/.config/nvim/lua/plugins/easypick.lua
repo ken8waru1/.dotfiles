@@ -1,5 +1,6 @@
 return {
     "axkirillov/easypick.nvim",
+    enabled = false,
     config = function()
         local easypick = require("easypick")
 

@@ -154,9 +154,8 @@ export CONFIG_HOME=$HOME/.config/
 export KG_FE=$HOME/projects/keyglee-frontend/
 export JAM_FE=$HOME/projects/jamsah-frontend/
 export NVM_DIR="$HOME/.nvm"
-
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"                   # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion" # This loads nvm bash_completion
+[ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"                                       # This loads nvm
+[ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" # This loads nvm bash_completion
 
 # fzf key bindings
 # source /usr/share/doc/fzf/examples/key-bindings.bash

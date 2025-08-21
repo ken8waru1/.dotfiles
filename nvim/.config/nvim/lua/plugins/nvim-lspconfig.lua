@@ -1,6 +1,43 @@
 return {
     "neovim/nvim-lspconfig",
     -- opts = {
+    --     servers = {
+    --         pylsp = {
+    --             before_init = function(params)
+    --                 params.processId = vim.NIL
+    --             end,
+    --             cmd = {
+    --                 "docker",
+    --                 "run",
+    --                 "-i",
+    --                 "--rm",
+    --                 "-v",
+    --                 "/Users/kenha/projects/odoo:/mnt/extra-addons",
+    --                 "odoo_custom_app:latest",
+    --                 "pylsp",
+    --             },
+    --             -- Add other pylsp settings here if needed
+    --         },
+    --     },
+    -- },
+    -- opts = {
+    --     servers = {
+    --         odoo_lsp = {
+    --             default_config = {
+    --                 cmd = { "odoo-lsp" },
+    --                 filetypes = { "javascript", "xml", "python" },
+    --                 root_dir = require("lspconfig.util").root_pattern(".odoo_lsp", ".odoo_lsp.json", ".git"),
+    --             },
+    --         },
+    --     },
+    --     setup = {
+    --         odoo_lsp = function(_, opts)
+    --             print("Setting up odoo_lsp")
+    --             require("lspconfig").odoo_lsp.setup(opts)
+    --         end,
+    --     },
+    -- },
+    -- opts = {
     --     setup = {
     --         lua_ls = function(_, opts)
     --             opts.on_init = function(client)
