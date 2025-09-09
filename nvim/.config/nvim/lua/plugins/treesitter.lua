@@ -22,4 +22,5 @@ return {
             "prisma",
         },
     },
+    dependencies = { "OXY2DEV/markview.nvim" },
 }

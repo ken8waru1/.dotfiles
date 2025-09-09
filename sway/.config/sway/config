@@ -243,7 +243,7 @@ bar {
         background $bg
         # text color used for blocks that do not have a color specified.
         statusline $lightgray
-        # workspaces section            
+        # workspaces section
         #                    border  backgr. text
         focused_workspace    $lightgray $lightgray $bg
         inactive_workspace   $darkgray $darkgray $lightgray
@@ -278,6 +278,7 @@ exec --no-startup-id alacritty
 for_window [title="Desktop @ QRect"] kill
 assign [app_id="Alacritty"] $ws1
 assign [app_id="firefox"] $ws2
+assign [app_id="google-chrome"] $ws2
 
 workspace_layout tabbed
 
@@ -285,6 +286,10 @@ exec_always systemctl --user start sway-session.target
 exec_always systemctl --user restart kanshi.service
 exec --no-startup-id dunst
 exec wl-paste --primary --watch wl-copy --primary --clear
+
 bindsym Print exec grim /tmp/screenshot.png
 bindsym $mod+Shift+Print exec grim -g "$(slurp)" - | swappy -f -
 bindsym $mod+Ctrl+Print exec grim -g "$(slurp)" - | wl-copy
+
+bindsym $mod+Alt+backslash exec grim -g "$(slurp)" - | swappy -f -
+bindsym $mod+Ctrl+backslash exec grim -g "$(slurp)" - | wl-copy
