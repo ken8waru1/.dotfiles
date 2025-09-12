@@ -9,6 +9,17 @@ return {
             end,
             desc = "Find files (include hidden)",
         },
+        {
+            "<leader>\\",
+            function()
+                require("telescope.builtin").live_grep({
+                    additional_args = function()
+                        return { "--hidden", "--glob", "!.git/" }
+                    end,
+                })
+            end,
+            desc = "Live Grep (include hidden)",
+        },
         { "<C-p>", require("telescope.builtin").git_files, desc = "Find Git files" },
         { "<leader>sx", require("telescope.builtin").resume, noremap = true, silent = true, desc = "Resume" },
         {
