@@ -34,6 +34,10 @@ return {
     },
     -- Configure LazyVim to load gruvbox
     {
+        "rebelot/kanagawa.nvim",
+        lazy = false,
+    },
+    {
         "LazyVim/LazyVim",
         opts = {
             colorscheme = "gruvbox",
