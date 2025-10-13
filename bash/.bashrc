@@ -9,7 +9,7 @@ export OSH="/home/$USER/.oh-my-bash"
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-bash is loaded.
-OSH_THEME="agnoster-custom"
+OSH_THEME="nekolight"
 
 # If you set OSH_THEME to "random", you can ignore themes you don't like.
 # OMB_THEME_RANDOM_IGNORED=("powerbash10k" "wanelo")
@@ -84,9 +84,9 @@ OMB_USE_SUDO=true
 # Example format: completions=(ssh git bundler gem pip pip3)
 # Add wisely, as too many completions slow down shell startup.
 completions=(
-    git
-    composer
-    ssh
+  git
+  composer
+  ssh
 )
 
 # Which aliases would you like to load? (aliases can be found in ~/.oh-my-bash/aliases/*)
@@ -94,8 +94,8 @@ completions=(
 # Example format: aliases=(vagrant composer git-avh)
 # Add wisely, as too many aliases slow down shell startup.
 aliases=(
-    general
-    tools
+  general
+  tools
 )
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-bash/plugins/*)
@@ -103,8 +103,8 @@ aliases=(
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
-    git
-    bashmarks
+  git
+  bashmarks
 )
 
 # Which plugins would you like to conditionally load? (plugins can be found in ~/.oh-my-bash/plugins/*)
@@ -168,7 +168,7 @@ bind '"\C-f":"tmux-sessionizer\n"'
 # keybind for switching between existing tmux sessions
 bind '"\ef":"tmux-session-switch\n"'
 
-export PATH="$PATH:$HOME/.local/bin/custom:/usr/local/go/bin:$HOME/.local/share/nvim/mason/bin"
+export PATH="$PATH:$HOME/.local/bin/custom:/usr/local/go/bin:$HOME/go/bin:$HOME/.local/share/nvim/mason/bin"
 
 # pnpm
 export PNPM_HOME="$HOME/.local/share/pnpm"

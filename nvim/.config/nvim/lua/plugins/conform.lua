@@ -14,6 +14,8 @@ return {
             html = { "prettierd" },
             xml = { "xmlformatter" },
             css = { "prettierd" },
+            sql = { "sqlfmt" },
+            go = { "gofumpt" },
         },
         formatters = {
             xmlformatter = {
