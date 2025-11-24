@@ -234,6 +234,19 @@ set $darkgray #1d2021
 set $lightgray #bdae93
 set $white #ffffff
 
+# set $bg #121212
+# set $red #d70000
+# set $green #789978
+# set $yellow #ffaa88
+# set $blue #7788aa
+# set $purple #708090
+# set $aqua #708090
+# set $gray #555555
+# set $darkgray #2a2a2a
+# set $lightgray #7a7a7a
+# set $white #dddddd
+
+
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {

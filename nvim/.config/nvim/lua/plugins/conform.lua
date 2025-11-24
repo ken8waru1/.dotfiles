@@ -12,7 +12,7 @@ return {
             python = { "black" },
             json = { "prettierd" },
             html = { "prettierd" },
-            xml = { "xmlformatter" },
+            xml = { "prettierd" },
             css = { "prettierd" },
             sql = { "sqlfmt" },
             go = { "gofumpt" },

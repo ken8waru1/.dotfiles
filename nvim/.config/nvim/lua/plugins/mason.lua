@@ -18,9 +18,9 @@ return {
                 "rustywind",
                 "python-lsp-server",
             })
-            opts.ui = {
-                border = "single",
-            }
+            -- opts.ui = {
+            --     border = "single",
+            -- }
         end,
     },
 }

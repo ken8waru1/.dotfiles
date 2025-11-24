@@ -12,6 +12,7 @@ return {
                 hover = {
                     border = {
                         style = "single",
+                        highlight = "FloatBorder",
                     },
                 },
             },

@@ -45,9 +45,9 @@ return {
     {
         "folke/tokyonight.nvim",
         lazy = false,
-        opts = {
-            transparent = true,
-        },
+        -- opts = {
+        --     transparent = true,
+        -- },
     },
     {
         "rose-pine/neovim",
@@ -60,12 +60,36 @@ return {
     {
         "savq/melange-nvim",
     },
+    {
+        "slugbyte/lackluster.nvim",
+        lazy = false,
+        priority = 1000,
+        opts = function()
+            local lackluster = require("lackluster")
+            return {
+                tweak_background = {
+                    popup = "#121212",
+                },
+                tweak_highlight = {
+                    ["FloatBorder"] = {
+                        overwrite = true,
+                        fg = lackluster.color.gray8,
+                    },
+                },
+            }
+        end,
+        -- opts = {
+        --     tweak_background = {
+        --         popup = lackluster.color.gray1,
+        --     },
+        -- },
+    },
 
     -- Configure LazyVim to load gruvbox
     {
         "LazyVim/LazyVim",
         opts = {
-            colorscheme = "everforest",
+            colorscheme = "tokyonight-day",
         },
     },
 }
