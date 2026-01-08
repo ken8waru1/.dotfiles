@@ -12,16 +12,12 @@ return {
             python = { "black" },
             json = { "prettierd" },
             html = { "prettierd" },
-            xml = { "prettierd" },
+            -- xml = { "lemminx" },
             css = { "prettierd" },
             sql = { "sqlfmt" },
             go = { "gofumpt" },
         },
         formatters = {
-            xmlformatter = {
-                command = "xmlformat",
-                prepend_args = { "--selfclose", "--blanks" },
-            },
             black = {
                 prepend_args = { "--line-length", "79" },
             },
