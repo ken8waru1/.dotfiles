@@ -15,3 +15,4 @@ vim.opt.undofile = true
 vim.opt.termguicolors = true
 vim.opt.scrolloff = 8
 vim.opt.foldmethod = "manual"
+vim.opt.conceallevel=0

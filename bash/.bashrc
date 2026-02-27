@@ -178,3 +178,7 @@ case ":$PATH:" in
 esac
 # pnpm end
 . "$HOME/.cargo/env"
+
+# opencode
+export PATH=/home/bonfire/.opencode/bin:$PATH
+source /home/bonfire/tools-src/alacritty/extra/completions/alacritty.bash

@@ -20,3 +20,12 @@ vim.api.nvim_create_autocmd({ "FileType" }, {
         vim.opt.formatoptions:remove({ "c", "r", "o" })
     end,
 })
+
+vim.api.nvim_create_autocmd("BufEnter", {
+    pattern = { "*.js", "*.jsx", "*.ts", "*.tsx" },
+    callback = function()
+        vim.opt_local.tabstop = 2
+        vim.opt_local.shiftwidth = 2
+        vim.opt.softtabstop = 2
+    end,
+})

@@ -45,8 +45,36 @@ return {
     {
         "folke/tokyonight.nvim",
         lazy = false,
+        opts = {
+            on_highlights = function(hl, c)
+                hl.FlashBackdrop = {
+                    link = "NONE",
+                }
+                hl.FlashCurrent = {
+                    bg = c.bg_search,
+                    fg = c.fg,
+                }
+                hl.FlashLabel = {
+                    fg = c.bg_dark,
+                    bg = c.cyan,
+                }
+            end,
+        },
         -- opts = {
         --     transparent = true,
+        -- },
+        -- overrides = {
+        --     NormalFloat = { fg = "#ebdbb2", bg = "#282828" },
+        --     GruvboxRedSign = { fg = "#fb4934", bg = "NONE" },
+        --     GruvboxAquaSign = { fg = "#83a598", bg = "NONE" },
+        --     GruvboxBlueSign = { fg = "#83a598", bg = "NONE" },
+        --     GruvboxYellowSign = { fg = "#fabd2f", bg = "NONE" },
+        --     TroubleTextError = { fg = "#ebdbb2", bg = "NONE" },
+        --     TroubleTextInformation = { fg = "#ebdbb2", bg = "NONE" },
+        --     TroubleTextWarning = { fg = "#ebdbb2", bg = "NONE" },
+        --     TroubleTextHint = { fg = "#ebdbb2", bg = "NONE" },
+        --     TroubleFoldIcon = { fg = "#fabd2f", bg = "NONE" },
+        --     FlashBackdrop = { link = "NONE" },
         -- },
     },
     {
@@ -89,7 +117,7 @@ return {
     {
         "LazyVim/LazyVim",
         opts = {
-            colorscheme = "tokyonight-day",
+            colorscheme = "catppuccin-mocha",
         },
     },
 }

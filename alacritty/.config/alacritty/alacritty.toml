@@ -14,7 +14,7 @@ key = "Return"
 mods = "Control"
 
 [font]
-size = 11.0
+size = 12.0
 
 [font.bold]
 family = "JetBrains Mono Nerd Font"
@@ -37,4 +37,4 @@ WINIT_X11_SCALE_FACTOR = "1"
 TERM = "xterm-256color" 
 
 [general]
-import = ["~/.config/alacritty/themes/themes/gruvbox_dark.toml"]
+import = ["~/.config/alacritty/themes/themes/catppuccin_mocha.toml"]
