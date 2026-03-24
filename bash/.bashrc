@@ -168,7 +168,7 @@ bind '"\C-f":"tmux-sessionizer\n"'
 # keybind for switching between existing tmux sessions
 bind '"\ef":"tmux-session-switch\n"'
 
-export PATH="$PATH:$HOME/.local/bin/custom:/usr/local/go/bin:$HOME/go/bin:$HOME/.local/share/nvim/mason/bin"
+export PATH="$HOME/.local/bin/custom:$HOME/.local/bin:/usr/local/go/bin:$HOME/go/bin:$HOME/.local/share/nvim/mason/bin:$PATH"
 
 # pnpm
 export PNPM_HOME="$HOME/.local/share/pnpm"
@@ -182,3 +182,4 @@ esac
 # opencode
 export PATH=/home/bonfire/.opencode/bin:$PATH
 source /home/bonfire/tools-src/alacritty/extra/completions/alacritty.bash
+# set -o vi

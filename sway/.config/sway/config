@@ -282,11 +282,11 @@ bar {
   colors {
     background         $base
     statusline         $text
-    focused_statusline $text
-    focused_separator  $base
+    # focused_statusline $text
+    # focused_separator  $base
 
     # target           border bg        text
-    focused_workspace  $base  $mauve    $crust
+    focused_workspace  $base  $lavender    $crust
     active_workspace   $base  $surface2 $text
     inactive_workspace $base  $base     $text
     urgent_workspace   $base  $red      $crust
@@ -315,9 +315,9 @@ input type:pointer {
 # client.urgent           $red $red $white $red $red
 
 # target                 title     bg        text   indicator  border
-client.focused           $base     $lavender $base  $rosewater $lavender
-client.focused_inactive  $overlay0 $base     $text  $rosewater $overlay0
-client.unfocused         $overlay0 $base     $text  $rosewater $overlay0
+client.focused           $lavender $lavender $base  $rosewater $lavender
+client.focused_inactive  $lavender $base     $text  $rosewater $overlay0
+client.unfocused         $lavender $base     $text  $rosewater $overlay0
 client.urgent            $peach    $base     $peach $overlay0  $peach
 client.placeholder       $overlay0 $base     $text  $overlay0  $overlay0
 client.background        $base
